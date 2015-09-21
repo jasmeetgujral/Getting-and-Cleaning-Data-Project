@@ -1,10 +1,10 @@
 # downloading data from source and saving it on local drive
 d_url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-local_url <- "E:/coursera/DataSet.zip"
+local_url <- "./coursera/DataSet.zip"
 download.file(d_url,local_url)
 
 #loading data in R
-unzip_url <- "E:/coursera/DataSet/UCI HAR Dataset"
+unzip_url <- "./coursera/DataSet/UCI HAR Dataset"
 dataActivityTest  <- read.table(file.path(unzip_url, "test" , "Y_test.txt" ),header = FALSE)
 dataActivityTrain <- read.table(file.path(unzip_url, "train", "Y_train.txt"),header = FALSE)
 
