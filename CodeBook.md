@@ -1,9 +1,10 @@
-Code book
+#Code book
+
 This document provides information about the generated sets by the script run_analysis.R, provided in this repository.
 
-Data sets
+##Data sets
 
-The function DeriveAndWriteDataSets from the script run_analysis.R writes two datasets, tidy1.csv and tidy2.csv. The first one, tidy1 is the result of a cleaning and selection of the data described in Original data set. The second one, tidy2.csv is the result of an aggregation of tidy1.csv.
+The script run_analysis.R writes new dataset, tidy.txt.
 
 Data set tidy1.csv
 
@@ -36,9 +37,7 @@ fBodyBodyGyroMag-mean() becomes freqBodyGyroMagMean
 fBodyBodyGyroJerkMag-meanFreq() becomes freqBodyGyroJerkMagMeanFreq
 A full description of the features is best obtained from the file features_info.txt, included with the original dataset (I found it unnecessary to duplicate all the information here).
 
-Data set tidy2.csv
 
-To form the dataset tidy2.csv, the observations from tidy1.csv were grouped by subject and activity and then aggregated using the mean function. This yields 180 rows (30 subjects times 6 activities) and 81 columns (1 for subject, 1 for activity plus 79 aggregated features).
 
 Original data set
 
