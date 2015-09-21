@@ -5,6 +5,8 @@ download.file(d_url,local_url)
 
 #loading data in R
 unzip_url <- "./coursera/DataSet/UCI HAR Dataset"
+unzip(local_url, exdir = "E:/coursera/DataSet")
+
 dataActivityTest  <- read.table(file.path(unzip_url, "test" , "Y_test.txt" ),header = FALSE)
 dataActivityTrain <- read.table(file.path(unzip_url, "train", "Y_train.txt"),header = FALSE)
 
